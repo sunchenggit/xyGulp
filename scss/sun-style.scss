@@ -1,0 +1,14 @@
+.box {
+	width:200px;
+	height:200px;
+	background:#f00;
+	&:after {
+		content:'.';
+	}
+	.img {
+		display: block;
+		img {
+			width: 100%;
+		}
+	}
+}

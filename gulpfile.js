@@ -67,9 +67,12 @@ gulp.task('minjs',function(){
 gulp.watch(scssUrl,['scss2css']);
 
 /* 复制文件 */
+var nodeModules = './node_modules';
+var cloneSrc = [`${nodeModules}/jquery/dist/**`,nodeModules+'/bootstrap/dist/**'];
+
 gulp.task('clone',function(){
 	pump([
-		gulp.src('./node_modules/jquery/dist/**/*.js',{base:'./node_modules'}),
+		gulp.src(cloneSrc,{base:nodeModules}),
 		gulp.dest('dist')
 	])
 })

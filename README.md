@@ -1,9 +1,9 @@
-## xyGulp
-### 用于祥云demo生产的gulp文件
-#### 包含以下插件
+# 基于gulp的编译scss文件
 
-- gulp 
-- gulp-scss
-- gulp-autoprefixer
-- gulp-cssbeautify
-- gulp-sourcemaps
+## 使用方法
+* npm i
+* gulp scss2css
+
+## 用到插件
+* gulp-autoprefixer *自动添加前缀*
+* gulp-cssbeautify  *css美化*
